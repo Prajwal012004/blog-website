@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post | Mindful Musings</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Mindful Musings</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="post-content">
+        <div class="container">
+            <article id="blog-post">
+                <!-- Post content will be loaded dynamically with JavaScript -->
+                <div class="post-header skeleton">
+                    <div class="post-meta skeleton-text"></div>
+                    <h1 class="post-title skeleton-text"></h1>
+                    <div class="post-author skeleton-text"></div>
+                </div>
+                <div class="post-featured-image skeleton"></div>
+                <div class="post-body">
+                    <div class="skeleton-text"></div>
+                    <div class="skeleton-text"></div>
+                    <div class="skeleton-text"></div>
+                    <div class="skeleton-text"></div>
+                    <div class="skeleton-text"></div>
+                </div>
+            </article>
+
+            <div class="post-tags" id="post-tags">
+                <!-- Tags will be loaded dynamically -->
+            </div>
+
+            <div class="share-post">
+                <h3>Share this post</h3>
+                <div class="social-share">
+                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="pinterest"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+
+            <div class="author-bio">
+                <div class="author-image">
+                    <img src="images/author-placeholder.jpg" alt="Author" id="author-image">
+                </div>
+                <div class="author-info">
+                    <h3 id="author-name">Author Name</h3>
+                    <p id="author-bio">Author bio will be loaded dynamically.</p>
+                    <div class="author-social">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="related-posts">
+                <h3>You might also like</h3>
+                <div class="posts-grid" id="related-posts-container">
+                    <!-- Related posts will be loaded dynamically -->
+                    <div class="post-card skeleton"></div>
+                    <div class="post-card skeleton"></div>
+                    <div class="post-card skeleton"></div>
+                </div>
+            </div>
+
+            <div class="comments-section">
+                <h3>Comments</h3>
+                <div class="comments-container" id="comments-container">
+                    <!-- Comments will be loaded dynamically -->
+                </div>
+                <div class="comment-form">
+                    <h4>Leave a comment</h4>
+                    <form id="comment-form">
+                        <div class="form-group">
+                            <input type="text" id="comment-name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="comment-email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="comment-text" placeholder="Your Comment" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Post Comment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Mindful Musings</h2>
+                    <p>Exploring ideas, sharing stories, and connecting minds.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Mindful Musings. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/post-detail.js"></script>
+</body>
+</html>

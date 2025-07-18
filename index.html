@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindful Musings | A Modern Blog</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Mindful Musings</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to Mindful Musings</h1>
+                <p>Exploring ideas, sharing stories, and connecting minds.</p>
+                <a href="#featured" class="btn">Read Latest</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="featured" class="featured-posts">
+        <div class="container">
+            <h2 class="section-title">Featured Posts</h2>
+            <div class="posts-grid" id="featured-posts-container">
+                <!-- Posts will be loaded dynamically with JavaScript -->
+                <div class="post-card skeleton"></div>
+                <div class="post-card skeleton"></div>
+                <div class="post-card skeleton"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="recent-posts">
+        <div class="container">
+            <h2 class="section-title">Recent Posts</h2>
+            <div class="posts-list" id="recent-posts-container">
+                <!-- Posts will be loaded dynamically with JavaScript -->
+                <div class="post-item skeleton"></div>
+                <div class="post-item skeleton"></div>
+                <div class="post-item skeleton"></div>
+                <div class="post-item skeleton"></div>
+                <div class="post-item skeleton"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get the latest posts delivered right to your inbox.</p>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Mindful Musings</h2>
+                    <p>Exploring ideas, sharing stories, and connecting minds.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Mindful Musings. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/posts.js"></script>
+</body>
+</html>
